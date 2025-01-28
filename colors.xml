@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="primary">#4CAF50</color> <!-- Green -->
+    <color name="primary_dark">#388E3C</color> <!-- Dark Green -->
+    <color name="primary_light">#C8E6C9</color> <!-- Light Green -->
+
+    <!-- Accent Colors -->
+    <color name="accent">#FF9800</color> <!-- Orange -->
+    <color name="accent_dark">#F57C00</color> <!-- Dark Orange -->
+    <color name="accent_light">#FFE0B2</color> <!-- Light Orange -->
+
+    <!-- Neutral Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#9E9E9E</color>
+    <color name="light_gray">#F5F5F5</color>
+    <color name="dark_gray">#616161</color>
+
+    <!-- Background Colors -->
+    <color name="background_light">#F8F9FA</color> <!-- Light Background -->
+    <color name="background_dark">#1E1E1E</color> <!-- Dark Background -->
+
+    <!-- Text Colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_highlight">#FF5722</color> <!-- Highlight Text -->
+
+    <!-- Button Colors -->
+    <color name="button_background">#2196F3</color> <!-- Blue -->
+    <color name="button_text">#FFFFFF</color> <!-- White -->
+
+    <!-- Custom Ride Option Colors -->
+    <color name="economy_color">#03A9F4</color> <!-- Blue for Economy -->
+    <color name="premium_color">#9C27B0</color> <!-- Purple for Premium -->
+    <color name="carpool_color">#8BC34A</color> <!-- Green for Carpool -->
+
+    <!-- Shadow Color -->
+    <color name="shadow_color">#B0BEC5</color> <!-- Light Gray Shadow -->
+
+    <!-- Error/Warning Colors -->
+    <color name="teal_700">#018786</color> <!-- Teal shade -->
+
+    <color name="error">#F44336</color> <!-- Red -->
+    <color name="warning">#FFC107</color> <!-- Amber -->
+    <color name="success">#4CAF50</color> <!-- Green -->
+</resources>

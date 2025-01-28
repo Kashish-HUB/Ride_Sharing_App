@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- MapView -->
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!-- Search Bar for Pickup Location -->
+    <android.widget.EditText
+        android:id="@+id/searchPickup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Pickup Location"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:background="@drawable/search_bar_background"
+        android:drawableLeft="@drawable/ic_location"
+    android:drawablePadding="10dp"
+    app:layout_constraintBottom_toTopOf="@+id/searchDropoff"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:textColor="@android:color/black"
+    android:textSize="16sp"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"/>
+
+    <!-- Search Bar for Drop-off Location -->
+    <android.widget.EditText
+        android:id="@+id/searchDropoff"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Drop-off Location"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:background="@drawable/search_bar_background"
+        android:drawableLeft="@drawable/ic_location"
+    android:drawablePadding="10dp"
+    app:layout_constraintBottom_toTopOf="@+id/currentLocationButton"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:textColor="@android:color/black"
+    android:textSize="16sp"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"/>
+
+    <!-- Current Location Button -->
+    <android.widget.Button
+        android:id="@+id/currentLocationButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/current_location_button"
+        android:text="C"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/rideOptionButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!-- Ride Option Button (for selecting ride type) -->
+    <android.widget.Button
+        android:id="@+id/rideOptionButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Choose Ride"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/ride_option_button"
+        app:layout_constraintBottom_toTopOf="@+id/requestRideButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Request Ride Button -->
+    <android.widget.Button
+        android:id="@+id/requestRideButton"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:text="Request Ride"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:background="@drawable/ride_option_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
